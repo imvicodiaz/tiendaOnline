@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        justify-content: space-around;
+
+       li a{
+        text-decoration: none;
+        padding-left: 2px;
+       }
+    }
+}

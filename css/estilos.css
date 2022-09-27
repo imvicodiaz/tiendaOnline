@@ -1,1 +1,69 @@
-/*# sourceMappingURL=estilos.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: lightgray;
+  width: max-content;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header h1 {
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-around;
+}
+.nav ul li a {
+  text-decoration: none;
+  padding-left: 2px;
+}
+
+#lateral {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 80%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.lateral {
+  text-decoration: none;
+  font-size: 40px;
+  padding-right: 50px;
+  margin-left: 12px;
+}
+
+#lateral:target {
+  right: 0;
+  transition: right 1s;
+}
+
+.aside_open ul {
+  list-style-type: none;
+  display: flex;
+}
+.aside_open ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}/*# sourceMappingURL=estilos.css.map */

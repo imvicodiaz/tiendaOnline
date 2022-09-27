@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vico Store - Inicio</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" <!--Iconos-->
+
+
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
+
+
+
+
+
 <body>
-    <header>
-        <img src="" alt="">
-        <nav>
+    <header class="header">
+
+
+      
+      <div class="aside_open">
+        <a href="#lateral" class="lateral"><span class="jam jam-menu"></span></a>
+
+        <ul id="lateral">
+            <li><a href="">Remeras</a></li>
+            <li><a href="">Buzos</a></li>
+            <li><a href="">Shorts</a></li>
+            <li><a href="">Mochilas</a></li>
+            <li><a href="">Lentes</a></li>
+    
+       
+          <li class="close"><a  href="#"><span class="jam jam-close"></span></a></li>
+        </ul>
+      </div>
+
+        <h1>VICO <br> STORE</h1>
+
+
+        <nav class="nav">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -22,51 +50,14 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contacto</a>
                 </li>
+                
               </ul>
-        </nav>           
+        </nav> 
+        
     </header>
 
 <!--ASIDE TODO APUNTA A UNA PARTE DE LA MISMA PAG, DONDE VA A HABER BLOQUE DE PRENDAS CON #ID-->
-    <aside>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Remeras
-            </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">remeras</a></li>
-              <li><a class="dropdown-item" href="#">buzos</a></li>
-              <li><a class="dropdown-item" href="#">Camperas</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Pantalones
-            </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Shorts</a></li>
-              <li><a class="dropdown-item" href="#">Pantalones</a></li>
-              <li><a class="dropdown-item" href="#">Joggings</a></li>
-            </ul>
-          </div>
-
-
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              accesorios
-            </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">gorros</a></li>
-              <li><a class="dropdown-item" href="#">gorras</a></li>
-              <li><a class="dropdown-item" href="#">mochilas</a></li>
-              <li><a class="dropdown-item" href="#">aros</a></li>
-              <li><a class="dropdown-item" href="#">lentes</a></li>
-            </ul>
-          </div>
-    </aside>
+   
     
     <!--MAIN DONDE VA TODAS LAS SECCIONES DE LAS PRENDAS-->
     
@@ -76,8 +67,48 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-12"> <!--Video tipo pool and bear-->
-                <p>¿Quienes somos?  </p>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut.</span>
+
+
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.shutterstock.com/es/image-photo/fashion-stylish-luxury-clothes-display-image-1360347566?id=1360347566&irclickid=Q%3AoVUXSRnxyITZmwaQybpw5JUkDTs3Wn%3AUPlUc0&irgwc=1&utm_campaign=Elevated%20Logic%2C%20LLC&utm_medium=Affiliate&utm_source=426523&utm_term=STOCKSNAP_SEARCH-NORMAL_API" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
             </div>
         </div>
     </section>   
@@ -462,6 +493,10 @@
 
     <span>gmail.com</span>
    </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 
 

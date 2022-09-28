@@ -1,13 +1,14 @@
 .nav{
-    display: flex;
-    flex-direction: column;
+    
 
     ul{
         list-style-type: none;
         display: flex;
-        align-items: center;
-        width: 250px;
-        justify-content: space-around;
+        align-items: flex-start;
+        width: 150px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-bottom: 0;
 
        li a{
         text-decoration: none;

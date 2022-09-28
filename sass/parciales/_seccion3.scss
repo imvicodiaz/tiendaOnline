@@ -1,0 +1,27 @@
+.seccion3{
+    height: 700px;
+
+    &_remeras{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    }
+
+    &_remeras_img{
+        width: 150px;
+        height: 220px;
+    }
+}
+
+.shop{
+    position: relative;
+  }
+.shopping-card{
+    font-size: 40px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+

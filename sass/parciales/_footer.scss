@@ -1,4 +1,22 @@
 footer{
     background-color: lightgrey;
-    height: 100px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+       h4{
+        font-size: 20px;
+        text-transform: uppercase;
+       }
+
+       div span{
+        font-size: 25px;
+       }
+
+       p{
+        text-align: center;
+        margin: 0 10px;
+       }
 }

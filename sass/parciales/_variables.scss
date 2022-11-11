@@ -6,3 +6,25 @@
 .body{
     position: relative;
 }
+
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+$estilos: (
+    titulos: 'Raleway', sans-serif,
+    textos: 'Roboto', sans-serif,
+    negro: rgb(0, 0, 0),
+    blanco: rgb(255, 255, 255),
+    
+);
+
+
+
+$estilos: (
+  blanco: #ffffff,
+);
+
+.subtitulo_index{
+    color: map-get($estilos, negro );
+}

@@ -7,131 +7,85 @@
   position: relative;
 }
 
-.header1 {
-  position: relative;
-}
-
-.header {
+header {
+  height: 200px;
   background-color: lightgray;
-  width: max-content;
-  height: 100px;
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*
-      position: sticky;
-      z-index: 110;
-      width: 100%;
-      height: 115px;
-      margin-bottom: -115px;
-      top: 0;
-      min-width: 320px;
-      pointer-events: none;
-      background-color: transparent;
-      overflow-x: hidden;
-
-      */
-}
-.header h1 {
-  font-size: 20px;
-}
-.header_shop {
-  font-size: 50px;
-  padding: 0 0 0 40px;
-}
-
-.nav ul {
-  list-style-type: none;
-  display: flex;
-  align-items: flex-start;
-  width: 150px;
   justify-content: space-evenly;
-  flex-direction: column;
-  margin-bottom: 0;
 }
-.nav ul li a {
-  text-decoration: none;
-  padding-left: 2px;
+header h1 {
+  font-size: 60px;
 }
-
-#lateral {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 80%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.lateral {
-  text-decoration: none;
-  font-size: 40px;
-  padding-right: 50px;
-  margin-left: 12px;
-}
-
-#lateral:target {
-  right: 0;
-  transition: right 1s;
-}
-
-.aside_open ul {
-  list-style-type: none;
-  display: flex;
-}
-.aside_open ul li a {
-  text-decoration: none;
+header h2 {
   font-size: 20px;
 }
-
-.seccion1 {
-  padding: 0;
+header nav ul {
+  list-style-type: none;
 }
-.seccion1 .seccion1_carrusel {
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.historia {
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.historia .historia_texto {
+  width: 400px;
+}
+.historia .historia_texto p {
+  padding: 10px;
+}
+.historia .historia_carrusel {
   width: 400px;
 }
 
-.seccion2 {
-  height: 200px;
-  padding: 20px 0 20px 30px;
+.seccion_busqueda {
+  height: 150px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
-.seccion2_info {
+
+#contenedorProductos {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.seccion3 {
-  height: 700px;
+#contenedorProductos .producto {
+  padding-bottom: 100px;
 }
-.seccion3_remeras {
+
+#carrito {
+  background-color: lightblue;
   display: flex;
+  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  height: 300px;
 }
-.seccion3_remeras_img {
-  width: 150px;
-  height: 220px;
+#carrito .itemCarrito {
+  margin-left: 20px;
+  font-size: 15pxs;
+  font-weight: 700;
 }
-
-.shop {
-  position: relative;
+#carrito .itemCarrito2 {
+  padding-left: 30px;
 }
-
-.shopping-card {
-  font-size: 40px;
-  position: absolute;
-  top: 2%;
-  right: 2%;
+#carrito .itemCarrito3 {
+  align-self: flex-end;
+  padding-bottom: 30px;
 }
 
 footer {
@@ -153,104 +107,12 @@ footer p {
   text-align: center;
   margin: 0 10px;
 }
-
-.shop_titulo {
-  height: 80px;
-  padding-left: 25%;
-  padding-top: 20px;
-}
-
-.shop_articulos {
-  padding: 30px;
-  border: 1px solid black;
-}
-
-.shop_datos {
-  margin-top: 20px;
-}
-.shop_datos_usuario {
+footer .footerMenu {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 250px;
-  padding-top: 20px;
-  padding-left: 25%;
+  list-style-type: none;
 }
-
-.shop_datos_ttc {
-  border: 1px solid black;
-  background-color: lightgrey;
-  width: 300px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 280px;
-}
-.shop_datos_ttc span {
-  font-size: 35px;
-}
-
-.shop_button {
-  margin-left: 40%;
-  margin-bottom: 20px;
-}
-.shop_button button {
-  width: 100px;
+footer .footerMenu li a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
 }/*# sourceMappingURL=estilos.css.map */
-
-
-
-
-#contenedorProductos{
-  width: 100vh;
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  
-}
-
-.producto{
-  
-  background-color: white;
-  margin: 5px;
-  border: 1px solid black;
-  
-}
-
-#carrito{
-  width: 100vh;
-  border: 1px solid black ;
-  display: flex;
-}
-
-.itemCarrito{
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.imagenProducto{
-  width: 300px;
-  height: 300px;
-}
-
-.tituloProducto{
-  margin: 15px;
-}
-
-.precioProducto{
-  margin: 15px;
-}
-
-.boton{
-  margin: 15px;
-}
-

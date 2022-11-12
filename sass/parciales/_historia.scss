@@ -1,0 +1,22 @@
+.historia{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+    .historia_texto{
+         width: 400px;
+
+         p{
+            padding: 10px;
+        }
+    }
+
+    .historia_carrusel{
+        width: 400px;
+    }
+}
+

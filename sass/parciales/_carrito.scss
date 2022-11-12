@@ -1,0 +1,26 @@
+#carrito{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 300px;
+    
+
+    .itemCarrito{
+        
+        margin-left: 20px;
+        font-size: 15pxs;
+        font-weight: 700;
+    }
+
+    .itemCarrito2{
+        
+        padding-left: 30px;
+    }
+
+    .itemCarrito3{
+       
+        align-self: flex-end;
+        padding-bottom: 30px;
+    }
+}

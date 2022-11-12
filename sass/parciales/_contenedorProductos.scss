@@ -1,0 +1,10 @@
+#contenedorProductos{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .producto{
+        padding-bottom: 100px;
+    }
+}

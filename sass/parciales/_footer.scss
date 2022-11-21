@@ -1,5 +1,5 @@
 footer{
-    background-color: lightgrey;
+    background-color: rgb(241, 95, 95);
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@ footer{
        .footerMenu{
         display: flex;
         list-style-type: none;
+        padding-left: 0;
             
 
             li a{

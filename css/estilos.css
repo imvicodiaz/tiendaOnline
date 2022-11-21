@@ -9,7 +9,7 @@
 
 header {
   height: 200px;
-  background-color: lightgray;
+  background-color: rgb(241, 95, 95);
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: row;
@@ -18,16 +18,18 @@ header {
 }
 header h1 {
   font-size: 60px;
+  color: white;
 }
 header h2 {
   font-size: 20px;
+  color: white;
 }
 header nav ul {
   list-style-type: none;
 }
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .historia {
@@ -88,8 +90,68 @@ header nav ul li a {
   padding-bottom: 30px;
 }
 
+#formulario {
+  height: 400px;
+  background-image: url(../img/IMG_7581.PNG);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-position: center;
+  color: white;
+}
+
+@media (max-width: 700px) and (min-width: 300px) {
+  header {
+    height: 250px;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h2 {
+    text-align: center;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    padding-right: 15px;
+  }
+  .historia {
+    height: 500px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+  }
+  .historia .historia_texto {
+    width: 100vh;
+    padding: 40px;
+  }
+  .historia .historia_carrusel {
+    width: 500px;
+  }
+  .seccion_busqueda {
+    width: 100vh;
+    height: 200px;
+  }
+  #contenedorProductos {
+    width: 100vh;
+  }
+  #carrito {
+    width: 100vh;
+  }
+  #formulario {
+    width: 100vh;
+  }
+  footer {
+    width: 100vh;
+  }
+}
 footer {
-  background-color: lightgrey;
+  background-color: rgb(241, 95, 95);
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -110,6 +172,7 @@ footer p {
 footer .footerMenu {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 footer .footerMenu li a {
   text-decoration: none;

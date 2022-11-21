@@ -1,0 +1,73 @@
+@media (max-width: 700px) and (min-width: 300px)  {
+
+    header{
+    height: 250px;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h2{
+        text-align: center;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            li{
+                padding-right: 15px;
+            }
+        }
+    }
+    }
+
+
+
+
+
+    .historia{
+        height: 500px;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vh;
+
+        .historia_texto{
+            width: 100vh;
+            padding:40px;
+        }
+
+        .historia_carrusel{
+            width: 500px;
+        }
+    
+    }
+
+    .seccion_busqueda{
+        width: 100vh;
+        height: 200px;
+
+    }
+
+
+    #contenedorProductos{
+        width: 100vh;
+
+    }
+
+    #carrito{
+        width: 100vh;
+    }
+
+    #formulario{
+        width: 100vh;
+    }
+
+
+
+    footer{
+        width: 100vh;
+    }
+}

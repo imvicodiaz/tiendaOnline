@@ -101,11 +101,6 @@ if (localStorage.getItem('carrito')) {
 renderizarCarrito();
 
 
-
-
-
-
-
 function renderizarCarrito() {
     carrito.innerHTML = `
         <div class= "itemCarrito">

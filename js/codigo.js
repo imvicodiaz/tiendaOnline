@@ -58,7 +58,7 @@ function renderizarProductos(productosFiltrados) {
     <p class="textoProducto">${producto.texto}</p>
     <img class="imagenProducto" src=${producto.imgUrl} >
     <h4 class="precioProducto" >$${producto.precio}</h4>
-    <button class="boton" id=${producto.id}>agregar carrito</button>
+    <button class="boton" id=${producto.id}>Agregar Carrito</button>
     `
 
         contenedorProductos.append(tarjetaProducto)
@@ -76,6 +76,12 @@ function renderizarProductos(productosFiltrados) {
             } else {
                 carritoGuardado.push({ id: productoBuscado.id, nombre: productoBuscado.nombre, precioUnidad: productoBuscado.precio, unidades: 1, subtotal: productoBuscado.precio });
             }
+
+            Swal.fire({
+                text: 'Portraid agregado al carrito :)',
+                icon: 'success',
+            })
+        
 
             localStorage.setItem('carrito', JSON.stringify(carritoGuardado))
 

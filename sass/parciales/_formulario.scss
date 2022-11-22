@@ -1,10 +1,19 @@
 #formulario{
     height: 400px;
-background-image: url(../img/IMG_7581.PNG);
+    background-image: url(../img/IMG_7581.PNG);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-position: center;
-    color: white;
+    background-size: cover;
+    color: black;
+    margin-bottom: 35px;
+
+    .botonFormulario{
+        width: 180px;
+        background-color:black;
+        border-radius: 5px;
+        border: 1px solid black;
+        color: white;
+    }
 }

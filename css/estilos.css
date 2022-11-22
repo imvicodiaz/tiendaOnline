@@ -51,12 +51,12 @@ header nav ul li a {
 }
 
 .seccion_busqueda {
-  height: 150px;
+  height: 200px;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -66,8 +66,34 @@ header nav ul li a {
   flex-direction: column;
   align-items: center;
 }
+#contenedorProductos .tituloProducto {
+  font-size: 70px;
+}
+#contenedorProductos .textoProducto {
+  font-size: 30px;
+  padding-top: 30px;
+}
+#contenedorProductos .tituloProducto:first-letter {
+  text-transform: uppercase;
+}
 #contenedorProductos .producto {
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contenedorProductos .precioProducto {
+  padding: 20px;
+  font-size: 30px;
+}
+#contenedorProductos .boton {
+  background-color: lightblue;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  color: black;
+  border: rgb(121, 208, 236) 2px solid;
+  font-size: 20px;
 }
 
 #carrito {
@@ -76,6 +102,7 @@ header nav ul li a {
   align-items: center;
   flex-direction: row;
   height: 300px;
+  margin-bottom: 35px;
 }
 #carrito .itemCarrito {
   margin-left: 20px;
@@ -97,7 +124,15 @@ header nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-position: center;
+  background-size: cover;
+  color: black;
+  margin-bottom: 35px;
+}
+#formulario .botonFormulario {
+  width: 180px;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid black;
   color: white;
 }
 
@@ -151,6 +186,7 @@ header nav ul li a {
   }
 }
 footer {
+  color: black;
   background-color: rgb(241, 95, 95);
   height: 250px;
   display: flex;
@@ -178,4 +214,5 @@ footer .footerMenu li a {
   text-decoration: none;
   color: black;
   padding-left: 10px;
+  font-weight: 30px;
 }/*# sourceMappingURL=estilos.css.map */
